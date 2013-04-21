@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.3.1">
+  <compound refid="comp_8c" kind="file"><name>comp.c</name>
+    <member refid="comp_8c_1a4ab99d9f486cd1e636b000f5c145a91c" kind="define"><name>tv</name></member>
+    <member refid="comp_8c_1aff389645027706a041c4d2b466ef15bc" kind="function"><name>ordenar</name></member>
+    <member refid="comp_8c_1a31d403ab300fcc47170e698c7fdac702" kind="function"><name>entrada</name></member>
+    <member refid="comp_8c_1a4ae7d19656b0d401e77dfa82a6ed3aec" kind="function"><name>calculos</name></member>
+    <member refid="comp_8c_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+</doxygenindex>

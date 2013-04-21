@@ -1,0 +1,124 @@
+.TH "comp.c" 3 "Sun Apr 21 2013" "Tarefa1" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+comp.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <math\&.h>\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBtv\fP   4"
+.br
+.RI "\fIUCS-Universidade de Caxias do Sul\&. \fP"
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int * \fBordenar\fP (int *vi)"
+.br
+.RI "\fIDeclaracao das funcoes utilizadas: \fP"
+.ti -1c
+.RI "int * \fBentrada\fP (void)"
+.br
+.RI "\fIFuncao que tem por objetivo solicitar ao usuario digitar numeros para posterior processamento\&. \fP"
+.ti -1c
+.RI "void \fBcalculos\fP (int *vec)"
+.br
+.RI "\fIFuncao que tem por objetivo efetuar os calculos necessarios com o vetor de numeros ja ordenados\&. \fP"
+.ti -1c
+.RI "int \fBmain\fP (int argc, char **argv)"
+.br
+.RI "\fIFuncao principal (main) \fP"
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define tv   4"
+
+.PP
+UCS-Universidade de Caxias do Sul\&. CARVI - Campus Universitario da Regiao dos Vinhedos 
+.PP
+\fBAuthor:\fP
+.RS 4
+Daniel Costi  21/04/2013 Programa relativo a tarefa 1 
+.RE
+.PP
+
+.PP
+Definition at line 12 of file comp\&.c\&.
+.SH "Function Documentation"
+.PP 
+.SS "void calculos (int *vec)"
+
+.PP
+Funcao que tem por objetivo efetuar os calculos necessarios com o vetor de numeros ja ordenados\&. transfere vetor ordenado para vetr, atraves de incremento posicao do ponteiro recebido\&.\&.\&.
+.PP
+Exibindo os numeros de forma ordenada, crescente, utilizando o loop para calculo de media:
+.PP
+Se for feito divisao entre inteiros, perde-se a parte fracionaria\&. Transferindo p/ double
+.PP
+Calculo da variancia\&.\&.\&.
+.PP
+Operacao ^2 nao funciona! Usa-se pow(x,y)!
+.PP
+Exibindo os valores de soma total, media, desvio padrao populacional e variancia populacional: 
+.PP
+Definition at line 96 of file comp\&.c\&.
+.SS "int * entrada (void)"
+
+.PP
+Funcao que tem por objetivo solicitar ao usuario digitar numeros para posterior processamento\&. Detectado carateres não numericos\&.\&.\&.
+.PP
+Inteiro valido, seguido pelo pressionamento da tecla <Enter>\&.\&.\&.
+.PP
+\fBReturns:\fP
+.RS 4
+Retorna ponteiro do vetor com os numeros digitados pelo usuario 
+.RE
+.PP
+
+.PP
+Definition at line 60 of file comp\&.c\&.
+.SS "int main (intargc, char **argv)"
+
+.PP
+Funcao principal (main) \fBParameters:\fP
+.RS 4
+\fIOs\fP parametros desta funcao nao sao utilizados 
+.RE
+.PP
+Solicita dados ao usuario\&.\&.\&.
+.PP
+Repassando os valores para vetor vx pois, pois, direto com ponteiro, não funcionou\&.\&.\&.
+.PP
+Ordenando em ordem crescente, resultado no ponteiro pronto:
+.PP
+Calculando media, variancia e desvio padrao, mostrando resultados: 
+.PP
+Definition at line 135 of file comp\&.c\&.
+.SS "int * ordenar (int *vi)"
+
+.PP
+Declaracao das funcoes utilizadas: Funcao que tem por objetivo ordenar os numeros recebidos pelo ponteiro vi\&. Inicializa vetor ordenado com valor m ximo para int com sinal, e
+.PP
+inicializa vetor pula com valor 50\&.\&.\&.
+.PP
+\fBReturns:\fP
+.RS 4
+Retorna ponteiro do vetor com os numeros ordenados 
+.RE
+.PP
+
+.PP
+Definition at line 20 of file comp\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Tarefa1 from the source code\&.

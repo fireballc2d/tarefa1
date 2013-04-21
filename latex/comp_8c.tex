@@ -1,0 +1,137 @@
+\hypertarget{comp_8c}{\section{comp.\-c File Reference}
+\label{comp_8c}\index{comp.\-c@{comp.\-c}}
+}
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$math.\-h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{comp_8c_a4ab99d9f486cd1e636b000f5c145a91c}{tv}~4
+\begin{DoxyCompactList}\small\item\em U\-C\-S-\/\-Universidade de Caxias do Sul. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int $\ast$ \hyperlink{comp_8c_aff389645027706a041c4d2b466ef15bc}{ordenar} (int $\ast$vi)
+\begin{DoxyCompactList}\small\item\em Declaracao das funcoes utilizadas\-: \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{comp_8c_a31d403ab300fcc47170e698c7fdac702}{entrada} (void)
+\begin{DoxyCompactList}\small\item\em Funcao que tem por objetivo solicitar ao usuario digitar numeros para posterior processamento. \end{DoxyCompactList}\item 
+void \hyperlink{comp_8c_a4ae7d19656b0d401e77dfa82a6ed3aec}{calculos} (int $\ast$vec)
+\begin{DoxyCompactList}\small\item\em Funcao que tem por objetivo efetuar os calculos necessarios com o vetor de numeros ja ordenados. \end{DoxyCompactList}\item 
+int \hyperlink{comp_8c_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em Funcao principal (main) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{comp_8c_a4ab99d9f486cd1e636b000f5c145a91c}{\index{comp.\-c@{comp.\-c}!tv@{tv}}
+\index{tv@{tv}!comp.c@{comp.\-c}}
+\subsubsection[{tv}]{\setlength{\rightskip}{0pt plus 5cm}\#define tv~4}}\label{comp_8c_a4ab99d9f486cd1e636b000f5c145a91c}
+
+
+U\-C\-S-\/\-Universidade de Caxias do Sul. 
+
+C\-A\-R\-V\-I -\/ Campus Universitario da Regiao dos Vinhedos \begin{DoxyAuthor}{Author}
+Daniel Costi  21/04/2013 Programa relativo a tarefa 1 
+\end{DoxyAuthor}
+
+
+Definition at line 12 of file comp.\-c.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{comp_8c_a4ae7d19656b0d401e77dfa82a6ed3aec}{\index{comp.\-c@{comp.\-c}!calculos@{calculos}}
+\index{calculos@{calculos}!comp.c@{comp.\-c}}
+\subsubsection[{calculos}]{\setlength{\rightskip}{0pt plus 5cm}void calculos (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{vec}
+\end{DoxyParamCaption}
+)}}\label{comp_8c_a4ae7d19656b0d401e77dfa82a6ed3aec}
+
+
+Funcao que tem por objetivo efetuar os calculos necessarios com o vetor de numeros ja ordenados. 
+
+transfere vetor ordenado para vetr, atraves de incremento posicao do ponteiro recebido...
+
+Exibindo os numeros de forma ordenada, crescente, utilizando o loop para calculo de media\-:
+
+Se for feito divisao entre inteiros, perde-\/se a parte fracionaria. Transferindo p/ double
+
+Calculo da variancia...
+
+Operacao $^\wedge$2 nao funciona! Usa-\/se pow(x,y)!
+
+Exibindo os valores de soma total, media, desvio padrao populacional e variancia populacional\-: 
+
+Definition at line 96 of file comp.\-c.
+
+\hypertarget{comp_8c_a31d403ab300fcc47170e698c7fdac702}{\index{comp.\-c@{comp.\-c}!entrada@{entrada}}
+\index{entrada@{entrada}!comp.c@{comp.\-c}}
+\subsubsection[{entrada}]{\setlength{\rightskip}{0pt plus 5cm}int $\ast$ entrada (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{comp_8c_a31d403ab300fcc47170e698c7fdac702}
+
+
+Funcao que tem por objetivo solicitar ao usuario digitar numeros para posterior processamento. 
+
+Detectado carateres não numericos...
+
+Inteiro valido, seguido pelo pressionamento da tecla $<$\-Enter$>$...
+
+\begin{DoxyReturn}{Returns}
+Retorna ponteiro do vetor com os numeros digitados pelo usuario 
+\end{DoxyReturn}
+
+
+Definition at line 60 of file comp.\-c.
+
+\hypertarget{comp_8c_a3c04138a5bfe5d72780bb7e82a18e627}{\index{comp.\-c@{comp.\-c}!main@{main}}
+\index{main@{main}!comp.c@{comp.\-c}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}}\label{comp_8c_a3c04138a5bfe5d72780bb7e82a18e627}
+
+
+Funcao principal (main) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Os} & parametros desta funcao nao sao utilizados \\
+\hline
+\end{DoxyParams}
+Solicita dados ao usuario...
+
+Repassando os valores para vetor vx pois, pois, direto com ponteiro, não funcionou...
+
+Ordenando em ordem crescente, resultado no ponteiro pronto\-:
+
+Calculando media, variancia e desvio padrao, mostrando resultados\-: 
+
+Definition at line 135 of file comp.\-c.
+
+\hypertarget{comp_8c_aff389645027706a041c4d2b466ef15bc}{\index{comp.\-c@{comp.\-c}!ordenar@{ordenar}}
+\index{ordenar@{ordenar}!comp.c@{comp.\-c}}
+\subsubsection[{ordenar}]{\setlength{\rightskip}{0pt plus 5cm}int $\ast$ ordenar (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{vi}
+\end{DoxyParamCaption}
+)}}\label{comp_8c_aff389645027706a041c4d2b466ef15bc}
+
+
+Declaracao das funcoes utilizadas\-: 
+
+Funcao que tem por objetivo ordenar os numeros recebidos pelo ponteiro vi. Inicializa vetor ordenado com valor m ximo para int com sinal, e
+
+inicializa vetor pula com valor 50...
+
+\begin{DoxyReturn}{Returns}
+Retorna ponteiro do vetor com os numeros ordenados 
+\end{DoxyReturn}
+
+
+Definition at line 20 of file comp.\-c.
+

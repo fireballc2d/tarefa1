@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="comp_8c" kind="file">
+    <compoundname>comp.c</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">math.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>math.h</label>
+      </node>
+      <node id="0">
+        <label>comp.c</label>
+        <link refid="comp.c"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="comp_8c_1a4ab99d9f486cd1e636b000f5c145a91c" prot="public" static="no">
+        <name>tv</name>
+        <initializer>4</initializer>
+        <briefdescription>
+<para>UCS-Universidade de Caxias do Sul. </para>        </briefdescription>
+        <detaileddescription>
+<para>CARVI - Campus Universitario da Regiao dos Vinhedos <simplesect kind="author"><para>Daniel Costi  21/04/2013 Programa relativo a tarefa 1 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/aluno/AMBIENTE/PROGRAMAS/tarefa1/final/comp.c" line="12" bodyfile="/home/aluno/AMBIENTE/PROGRAMAS/tarefa1/final/comp.c" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="comp_8c_1aff389645027706a041c4d2b466ef15bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int *</type>
+        <definition>int * ordenar</definition>
+        <argsstring>(int *vi)</argsstring>
+        <name>ordenar</name>
+        <param>
+          <type>int *</type>
+          <declname>vi</declname>
+        </param>
+        <briefdescription>
+<para>Declaracao das funcoes utilizadas: </para>        </briefdescription>
+        <detaileddescription>
+<para>Funcao que tem por objetivo ordenar os numeros recebidos pelo ponteiro vi. </para>        </detaileddescription>
+        <inbodydescription>
+<para>Inicializa vetor ordenado com valor m ximo para int com sinal, e</para><para>inicializa vetor pula com valor 50...</para><para><simplesect kind="return"><para>Retorna ponteiro do vetor com os numeros ordenados </para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/aluno/AMBIENTE/PROGRAMAS/tarefa1/final/comp.c" line="15" bodyfile="/home/aluno/AMBIENTE/PROGRAMAS/tarefa1/final/comp.c" bodystart="20" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="comp_8c_1a31d403ab300fcc47170e698c7fdac702" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int *</type>
+        <definition>int * entrada</definition>
+        <argsstring>(void)</argsstring>
+        <name>entrada</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Funcao que tem por objetivo solicitar ao usuario digitar numeros para posterior processamento. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Detectado carateres não numericos...</para><para>Inteiro valido, seguido pelo pressionamento da tecla &lt;Enter&gt;...</para><para><simplesect kind="return"><para>Retorna ponteiro do vetor com os numeros digitados pelo usuario </para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/aluno/AMBIENTE/PROGRAMAS/tarefa1/final/comp.c" line="16" bodyfile="/home/aluno/AMBIENTE/PROGRAMAS/tarefa1/final/comp.c" bodystart="60" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="comp_8c_1a4ae7d19656b0d401e77dfa82a6ed3aec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void calculos</definition>
+        <argsstring>(int *vec)</argsstring>
+        <name>calculos</name>
+        <param>
+          <type>int *</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+<para>Funcao que tem por objetivo efetuar os calculos necessarios com o vetor de numeros ja ordenados. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>transfere vetor ordenado para vetr, atraves de incremento posicao do ponteiro recebido...</para><para>Exibindo os numeros de forma ordenada, crescente, utilizando o loop para calculo de media:</para><para>Se for feito divisao entre inteiros, perde-se a parte fracionaria. Transferindo p/ double</para><para>Calculo da variancia...</para><para>Operacao ^2 nao funciona! Usa-se pow(x,y)!</para><para>Exibindo os valores de soma total, media, desvio padrao populacional e variancia populacional: </para>        </inbodydescription>
+        <location file="/home/aluno/AMBIENTE/PROGRAMAS/tarefa1/final/comp.c" line="17" bodyfile="/home/aluno/AMBIENTE/PROGRAMAS/tarefa1/final/comp.c" bodystart="96" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="comp_8c_1a3c04138a5bfe5d72780bb7e82a18e627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char **argv)</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+<para>Funcao principal (main) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parametros desta funcao nao sao utilizados </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>Solicita dados ao usuario...</para><para>Repassando os valores para vetor vx pois, pois, direto com ponteiro, não funcionou...</para><para>Ordenando em ordem crescente, resultado no ponteiro pronto:</para><para>Calculando media, variancia e desvio padrao, mostrando resultados: </para>        </inbodydescription>
+        <location file="/home/aluno/AMBIENTE/PROGRAMAS/tarefa1/final/comp.c" line="135" bodyfile="/home/aluno/AMBIENTE/PROGRAMAS/tarefa1/final/comp.c" bodystart="135" bodyend="155"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="9"><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="comp_8c_1a4ab99d9f486cd1e636b000f5c145a91c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>tv<sp/>4<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="15"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<ref refid="comp_8c_1aff389645027706a041c4d2b466ef15bc" kindref="member" tooltip="Declaracao das funcoes utilizadas:">ordenar</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*vi);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<ref refid="comp_8c_1a31d403ab300fcc47170e698c7fdac702" kindref="member" tooltip="Funcao que tem por objetivo solicitar ao usuario digitar numeros para posterior processamento.">entrada</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="comp_8c_1a4ae7d19656b0d401e77dfa82a6ed3aec" kindref="member" tooltip="Funcao que tem por objetivo efetuar os calculos necessarios com o vetor de numeros ja ordenados...">calculos</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*vec);<sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="comp_8c_1aff389645027706a041c4d2b466ef15bc" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<ref refid="comp_8c_1aff389645027706a041c4d2b466ef15bc" kindref="member" tooltip="Declaracao das funcoes utilizadas:">ordenar</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*vi)<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tmp=0;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j,<sp/>k,<sp/>m;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ordenado<sp/>[<ref refid="comp_8c_1a4ab99d9f486cd1e636b000f5c145a91c" kindref="member" tooltip="UCS-Universidade de Caxias do Sul.">tv</ref>];</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pula<sp/>[<ref refid="comp_8c_1a4ab99d9f486cd1e636b000f5c145a91c" kindref="member" tooltip="UCS-Universidade de Caxias do Sul.">tv</ref>];</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*s;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(m=0;m&lt;<ref refid="comp_8c_1a4ab99d9f486cd1e636b000f5c145a91c" kindref="member" tooltip="UCS-Universidade de Caxias do Sul.">tv</ref>;m++)<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ordenado<sp/>[m]=<sp/>2147483646;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pula<sp/>[m]<sp/>=<sp/>50;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(j=0;j&lt;<ref refid="comp_8c_1a4ab99d9f486cd1e636b000f5c145a91c" kindref="member" tooltip="UCS-Universidade de Caxias do Sul.">tv</ref>;j++)<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m=0;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(m&lt;tv)<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(k=0;k&lt;<ref refid="comp_8c_1a4ab99d9f486cd1e636b000f5c145a91c" kindref="member" tooltip="UCS-Universidade de Caxias do Sul.">tv</ref>;k++)<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m==pula[k])<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m++;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmp=1;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tmp==0)<sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>*(vi+m)<sp/>&lt;<sp/>ordenado[j])<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ordenado[j]=*(vi+m);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pula[j]=m;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m++;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmp<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s=&amp;ordenado[0];</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>s;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="comp_8c_1a31d403ab300fcc47170e698c7fdac702" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<ref refid="comp_8c_1a31d403ab300fcc47170e698c7fdac702" kindref="member" tooltip="Funcao que tem por objetivo solicitar ao usuario digitar numeros para posterior processamento.">entrada</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>term;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>vig[<ref refid="comp_8c_1a4ab99d9f486cd1e636b000f5c145a91c" kindref="member" tooltip="UCS-Universidade de Caxias do Sul.">tv</ref>];</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*j;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>system<sp/>(</highlight><highlight class="stringliteral">&quot;clear&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(i&lt;<ref refid="comp_8c_1a4ab99d9f486cd1e636b000f5c145a91c" kindref="member" tooltip="UCS-Universidade de Caxias do Sul.">tv</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>system<sp/>(</highlight><highlight class="stringliteral">&quot;clear&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf<sp/>(</highlight><highlight class="stringliteral">&quot;\nDigite<sp/>um<sp/>numero<sp/>inteiro:<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(scanf(</highlight><highlight class="stringliteral">&quot;%d%c&quot;</highlight><highlight class="normal">,<sp/>&amp;num,<sp/>&amp;term)<sp/>!=<sp/>2<sp/>||<sp/>term<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">)<sp/>{<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf<sp/>(</highlight><highlight class="stringliteral">&quot;<sp/>***<sp/>Caracter(es)<sp/>Invalido(s)<sp/>***<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getchar();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vig[i]=num;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++i;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>system<sp/>(</highlight><highlight class="stringliteral">&quot;clear&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>printf<sp/>(</highlight><highlight class="stringliteral">&quot;\nMostrando<sp/>os<sp/>numeros<sp/>digitados:<sp/>\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i=0;i&lt;<ref refid="comp_8c_1a4ab99d9f486cd1e636b000f5c145a91c" kindref="member" tooltip="UCS-Universidade de Caxias do Sul.">tv</ref>;i++)<sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf<sp/>(</highlight><highlight class="stringliteral">&quot;Número<sp/>%d<sp/>armazenado<sp/>no<sp/>vetor<sp/>vig[%d].\n&quot;</highlight><highlight class="normal">,vig[i],i);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>j=&amp;vig[0];</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>j;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="comp_8c_1a4ae7d19656b0d401e77dfa82a6ed3aec" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="comp_8c_1a4ae7d19656b0d401e77dfa82a6ed3aec" kindref="member" tooltip="Funcao que tem por objetivo efetuar os calculos necessarios com o vetor de numeros ja ordenados...">calculos</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*vec)<sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>vetr[<ref refid="comp_8c_1a4ab99d9f486cd1e636b000f5c145a91c" kindref="member" tooltip="UCS-Universidade de Caxias do Sul.">tv</ref>];</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>media,<sp/>tmp2,<sp/>vari=0;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>somat=0;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i=0;i&lt;<ref refid="comp_8c_1a4ab99d9f486cd1e636b000f5c145a91c" kindref="member" tooltip="UCS-Universidade de Caxias do Sul.">tv</ref>;i++)<sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vetr[i]=*vec++;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i=0;i&lt;<ref refid="comp_8c_1a4ab99d9f486cd1e636b000f5c145a91c" kindref="member" tooltip="UCS-Universidade de Caxias do Sul.">tv</ref>;i++)<sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf<sp/>(</highlight><highlight class="stringliteral">&quot;Valor<sp/>armazenado:<sp/>%d<sp/>,<sp/>[%d]\n&quot;</highlight><highlight class="normal">,vetr[i],i);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>somat=somat+vetr[i];</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>tmp2<sp/>=<sp/>somat;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>media<sp/>=<sp/>tmp2/<ref refid="comp_8c_1a4ab99d9f486cd1e636b000f5c145a91c" kindref="member" tooltip="UCS-Universidade de Caxias do Sul.">tv</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i=0;i&lt;<ref refid="comp_8c_1a4ab99d9f486cd1e636b000f5c145a91c" kindref="member" tooltip="UCS-Universidade de Caxias do Sul.">tv</ref>;i++)<sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmp2=pow((vetr[i]-media),2);<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vari=vari+tmp2;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>vari=vari/<ref refid="comp_8c_1a4ab99d9f486cd1e636b000f5c145a91c" kindref="member" tooltip="UCS-Universidade de Caxias do Sul.">tv</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>printf<sp/>(</highlight><highlight class="stringliteral">&quot;Soma<sp/>total:<sp/>%li\n&quot;</highlight><highlight class="normal">,somat);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>printf<sp/>(</highlight><highlight class="stringliteral">&quot;Media:<sp/>%a\n&quot;</highlight><highlight class="normal">,media);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>printf<sp/>(</highlight><highlight class="stringliteral">&quot;Variância<sp/>populacional:<sp/>%f\n&quot;</highlight><highlight class="normal">,vari);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>printf<sp/>(</highlight><highlight class="stringliteral">&quot;Desv.<sp/>padrao<sp/>populacional:<sp/>%f\n&quot;</highlight><highlight class="normal">,sqrt(vari));</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135" refid="comp_8c_1a3c04138a5bfe5d72780bb7e82a18e627" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="comp_8c_1a3c04138a5bfe5d72780bb7e82a18e627" kindref="member" tooltip="Funcao principal (main)">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**<sp/>argv)<sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*entra;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*pronto;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>vx[<ref refid="comp_8c_1a4ab99d9f486cd1e636b000f5c145a91c" kindref="member" tooltip="UCS-Universidade de Caxias do Sul.">tv</ref>];</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>entra<sp/>=<sp/><ref refid="comp_8c_1a31d403ab300fcc47170e698c7fdac702" kindref="member" tooltip="Funcao que tem por objetivo solicitar ao usuario digitar numeros para posterior processamento.">entrada</ref><sp/>();</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i=0;i&lt;<ref refid="comp_8c_1a4ab99d9f486cd1e636b000f5c145a91c" kindref="member" tooltip="UCS-Universidade de Caxias do Sul.">tv</ref>;i++)<sp/>{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vx[i]=*entra++;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pronto<sp/>=<sp/><ref refid="comp_8c_1aff389645027706a041c4d2b466ef15bc" kindref="member" tooltip="Declaracao das funcoes utilizadas:">ordenar</ref><sp/>(&amp;vx[0]);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="comp_8c_1a4ae7d19656b0d401e77dfa82a6ed3aec" kindref="member" tooltip="Funcao que tem por objetivo efetuar os calculos necessarios com o vetor de numeros ja ordenados...">calculos</ref><sp/>(pronto);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/aluno/AMBIENTE/PROGRAMAS/tarefa1/final/comp.c"/>
+  </compounddef>
+</doxygen>
